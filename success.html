@@ -34,35 +34,37 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <div class="images-container">
-        <div class="img-wrapper">
-          <img
-            class="bg-card-back"
-            src="./images/bg-card-back.png"
-            alt="cc back image"
-          />
-          <div class="overlay-text-card-back">123</div>
-        </div>
-        <div class="img-wrapper">
-          <img
-            class="bg-card-front"
-            src="./images/bg-card-front.png"
-            alt="cc front image"
-          />
-          <div class="overlay-text-card-front">
-            <div class="cc-logo-container">
+      <div class="inner-wrapper">
+        <div class="images-container">
+          <div class="img-wrapper">
+            <img
+              class="bg-card-back"
+              src="./images/bg-card-back.png"
+              alt="cc back image"
+            />
+            <div class="overlay-text-card-back">000</div>
+          </div>
+          <div class="img-wrapper">
+            <img
+              class="bg-card-front"
+              src="./images/bg-card-front.png"
+              alt="cc front image"
+            />
+            <div class="overlay-text-card-front">
               <div class="card-logo"></div>
-            </div>
-            <div class="overlay-text-wrapper">
-              <div class="cc-default-zeros">9591 6489 6389 1011</div>
-              <div class="cc-identity">
-                <div>felicia leire</div>
-                <div>09/26</div>
+              <!-- <div class="cc-logo-container">
+              </div> -->
+              <div class="overlay-text-wrapper">
+                <div class="cc-default-zeros">0000 0000 0000 0000</div>
+                <div class="cc-identity">
+                  <div>Jane Appleseed</div>
+                  <div>00/00</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="content-wrapper">
       <div class="form-wrapper">
         <div class="success-wrapper">
           <img src="images/icon-complete.svg" alt="complete icon" />
@@ -70,20 +72,28 @@
           <h4>We've added your card details</h4>
           <br />
           <br />
-          <button class="btn">Continue</button>
+          <button class="btn" onclick="redirectMe()">Continue</button>
         </div>
       </div>
+        </div>
     </div>
+    <script type="text/javascript">
+      function redirectMe() {
+        
+        window.location.replace('/index.html')
+      }
+    </script>
 
     <!-- Completed state start -->
 
     <!-- Thank you! We've added your card details Continue -->
-
+<!-- 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Preksa</a>.
-    </div>
+    </div> -->
+    
   </body>
 </html>
